@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divaro – Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #F6FBFA;
+      --surface: #FFFFFF;
+      --text: #0F2A2E;
+      --muted: #557075;
+      --brand: #2BA6A4;
+      --border: #D8E6E5;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .logo {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: var(--brand);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 600; font-size: 20px;
+    }
+    h1 { font-size: 28px; margin: 0; letter-spacing: -0.3px; }
+    .updated { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 24px 8px;
+      margin-bottom: 16px;
+    }
+    h2 { font-size: 17px; margin: 0 0 8px; letter-spacing: -0.2px; }
+    p, li { font-size: 15px; color: #1b3b40; margin: 0 0 10px; }
+    ul { padding-left: 20px; margin: 0 0 10px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .muted { color: var(--muted); font-size: 13px; }
+    footer { text-align: center; margin-top: 32px; font-size: 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">D</div>
+      <div>
+        <h1>Divaro – Privacy Policy</h1>
+        <div class="updated">Last updated: June 2026</div>
+      </div>
+    </header>
+
+    <div class="card">
+      <h2>Who we are</h2>
+      <p>Divaro ("we", "us") is a mobile app that uses your phone's camera to scan restaurant bills and split them between friends. This policy explains what we collect, why, and how to delete it.</p>
+    </div>
+
+    <div class="card">
+      <h2>What we collect</h2>
+      <ul>
+        <li><strong>Account identity</strong> – your name, email address and (where provided) profile picture from Google Sign-In or Sign in with Apple.</li>
+        <li><strong>Receipt images</strong> – photos of bills you choose to scan. These are sent once to OpenAI to extract line items and are not stored on our servers after extraction.</li>
+        <li><strong>Bill &amp; group content</strong> – line items, totals, member names, and PayID/payment handles you add inside the app.</li>
+        <li><strong>Contacts</strong> – only if you tap "Add from Contacts". We read the chosen contact's display name on-device so you can assign them to a bill. We do not upload your address book to our servers.</li>
+        <li><strong>Device logs</strong> – standard crash and diagnostic data from Apple/Expo used to keep the app stable.</li>
+      </ul>
+      <p class="muted">We do <strong>not</strong> collect location, health, financial accounts, browsing history, advertising identifiers, or any sensitive personal information.</p>
+    </div>
+
+    <div class="card">
+      <h2>How we use it</h2>
+      <ul>
+        <li>To sign you in and keep your bills tied to your account.</li>
+        <li>To extract items and prices from the receipt photos you take (one-time call to OpenAI's vision model).</li>
+        <li>To let you share a bill summary via your device's native share sheet or QR code.</li>
+        <li>To fix bugs and improve the app.</li>
+      </ul>
+      <p>We do <strong>not</strong> sell your data, we do <strong>not</strong> use it for advertising, and we do <strong>not</strong> track you across other companies' apps or websites.</p>
+    </div>
+
+    <div class="card">
+      <h2>Who we share data with</h2>
+      <ul>
+        <li><strong>Apple / Google</strong> – only for sign-in identity verification.</li>
+        <li><strong>OpenAI</strong> – each receipt image you scan is sent once to extract text. OpenAI processes it under their API terms and does not retain it for training.</li>
+        <li><strong>Our hosting provider</strong> – stores your account, bills, and groups in an encrypted database.</li>
+      </ul>
+      <p>No other third parties receive your data.</p>
+    </div>
+
+    <div class="card">
+      <h2>Your rights</h2>
+      <ul>
+        <li><strong>Delete your account</strong> – open the app → Profile → "Delete my account". This permanently removes your account, bills, groups and sessions, and revokes your Sign in with Apple refresh token. The action is immediate and irreversible.</li>
+        <li><strong>Sign out</strong> – ends your current session without deleting data.</li>
+        <li><strong>Access &amp; correction</strong> – contact us at the email below and we'll export or correct the data we hold on you.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Children</h2>
+      <p>Divaro is not directed at children under 13 and we do not knowingly collect their data.</p>
+    </div>
+
+    <div class="card">
+      <h2>Changes to this policy</h2>
+      <p>If we materially change this policy we will update the "Last updated" date above and notify you inside the app before the change takes effect.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Questions, data requests, or complaints: <a href="mailto:divaroai@outlook.com">divaroai@outlook.com</a>.</p>
+    </div>
+
+    <footer>© 2026 Divaro. All rights reserved.</footer>
+  </div>
+</body>
+</html>
